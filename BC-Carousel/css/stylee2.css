@@ -1,0 +1,27 @@
+body {
+	background: url(../images/bg-headliner.gif) repeat center;
+	color: #2b3980;
+	font-family: 'AndikaRegular';
+	font-size: 14px;
+	margin: 0;
+	min-width: 950px;
+	padding: 0;
+}
+
+#carousel{
+	width:950px;
+	height:500px;
+	overflow:hidden;
+	margin-left:180px;
+}
+
+#carousel li{
+	display:none;
+	top:0;
+	left:0;
+}
+
+#carousel li img{
+	height:100%;
+	width:100%;
+}
