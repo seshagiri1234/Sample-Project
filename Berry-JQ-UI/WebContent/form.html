@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+ <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1/jquery-ui.js" />
+<link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1/jquery-ui.structure.js" />
+<link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1/jquery-ui.theme.js" />
+
+<script src="../script/validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../jquery-ui-1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+
+<form action="action.php" method="post" onsubmit="return validateFn()">
+<h2>User Details</h2>
+
+<label>Name :</label>
+<input id="name" name="name" type="text" "><br><br>
+
+<label>Gender :</label>
+<input id="male" name="gender" type="radio" value="Male">
+<label>Male</label>
+<input id="female" name="gender" type="radio" value="Female">
+<label>Female</label><br><br>
+
+<label>Date of Birth :</label>
+<input id="dob" name="dob"  type="email"><br><br>
+
+<label>Email :</label>
+<input id="email" name="email"  type="email"><br><br>
+
+<label>Contact No :</label>
+<input id="contact" name="contact" type="text" 
+		onchange="validatecontact()"><br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
